@@ -30,12 +30,12 @@ const currentExport = {
 
     // This does work:
     //
-    if (dev && !isServer) {
-      const HMR = config.module.rules.find(r => r.loader === "hot-self-accept-loader")
-      if (HMR) {
-        HMR.test = /\.(ts|tsx)$/
-        HMR.options.extensions = /\.(ts|tsx)$/
-      }
+    // if (dev && !isServer) {
+    //   const HMR = config.module.rules.find(r => r.loader === "hot-self-accept-loader")
+    //   if (HMR) {
+    //     HMR.test = /\.(ts|tsx)$/
+    //    HMR.options.extensions = /\.(ts|tsx)$/
+    //  }
     }
 
     return config
